@@ -16,6 +16,7 @@ func ping(url string, c chan string) {
     c <- fmt.Sprintf("Success: %s is accessible", url)
 }
 
+
 func main() {
     // Create a channel to communicate between goroutines
     c := make(chan string)
